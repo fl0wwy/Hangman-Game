@@ -34,7 +34,7 @@ def game():
             answer = 'n'
         if answer == 'n':    
             letter = input('Guess a single letter: ').lower()
-            while len(letter) != 1 or letter.isalpha() == False:
+            while len(letter) != 1 or letter.isalpha == False:
                 letter = input('Input is invalid. please make sure you input a single alphanumeric character: ').lower()
 
             if letter in word:
@@ -68,19 +68,8 @@ def game():
                 for ind in range(23):
                     print(emojis[0])
                     emojis.pop(0)   
-    print(f'You win! your word was "{word}"')       
+    if count != 0:
+        print(f'You win! your word was "{word}"')       
 
-game()         
-                
-        
-
-
-
-
-
-
-               
-
-
-
-   
+if __name__ == '__main__':
+    game()         
