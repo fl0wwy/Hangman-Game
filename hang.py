@@ -51,7 +51,7 @@ def game():
                     print ('This is your last try. Make it count!')
                 else:
                     print(f'{count} tries left...')        
-                for ind in range(23):
+                for row in range(23):
                     print(emojis[0])
                     emojis.pop(0)
         else:
@@ -65,7 +65,7 @@ def game():
                     print ('This is your last try. Make it count!')
                 else:
                     print(f'{count} tries left...')    
-                for ind in range(23):
+                for row in range(23):
                     print(emojis[0])
                     emojis.pop(0)   
     if count != 0:
