@@ -34,7 +34,7 @@ def game():
             answer = 'n'
         if answer == 'n':    
             letter = input('Guess a single letter: ').lower()
-            while len(letter) != 1 or letter.isalpha == False:
+            while len(letter) != 1 or letter.isalpha() == False:
                 letter = input('Input is invalid. please make sure you input a single alphanumeric character: ').lower()
 
             if letter in word:
